@@ -16,7 +16,7 @@ public interface LotteryAPI {
     String BASE_URL = "https://data.ny.gov/resource/h6w8-42p9.json/";
 
     @GET("?$$app_token=O1pR7hGtxKw3s6gurSXXkyy7V")
-    Call<Lottery> getLottery();
+    Call<List<Lottery>> getLottery();
 
 
     class Factory {
@@ -37,3 +37,4 @@ public interface LotteryAPI {
         }
     }
 }
+
